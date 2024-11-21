@@ -57,7 +57,7 @@ class Timer {
         this.maxSeconds = maxSeconds;
         this.isInactivityTimer = isInactivityTimer;
         this.isActionRunning = false;
-        this.isActive = true;
+        this.isActive = false;
         this.lastExecutionDate = new Date();
         this.elapsedSeconds = 0;
         this.tickAction = tickAction;
