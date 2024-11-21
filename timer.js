@@ -59,7 +59,7 @@ class Timer {
         this.isActionRunning = false;
         this.isActive = false;
         this.lastExecutionDate = new Date();
-        this.elapsedSeconds = 4800;
+        this.elapsedSeconds += 4800;
         this.tickAction = tickAction;
         this.createdDate = new Date();
     }
