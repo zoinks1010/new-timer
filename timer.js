@@ -79,9 +79,12 @@ class Timer {
      * @returns {boolean}
      */
     get isComplete() {
-        return this.remainingSeconds === 4800;
-    }
-
+    const rangeStart = 0;    // Start of the range (inclusive)
+    const rangeEnd = 4800;   // End of the range (inclusive)
+    return this.remainingSeconds !== null && 
+           this.remainingSeconds >= rangeStart && 
+           this.remainingSeconds <= rangeEnd;
+}
     /**
      * Cancels the timer by setting the it to inactive and 'complete' (remainingSeconds === 0)
      * @returns {void}
